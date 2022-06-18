@@ -6,7 +6,6 @@ class Solution:
         freq = [[] for i in range(len(nums)+1)]
         for i in nums:
             occurance[i] = 1 + occurance.get(i,0)
-        print(occurance)
         for key,value in occurance.items():
             freq[value].append(key)
         item = []

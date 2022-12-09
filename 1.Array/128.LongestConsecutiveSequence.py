@@ -6,7 +6,7 @@ class Solution:
         for i in nums:
             length = 0
             if (i-1) not in unique:
-                while(i in unique):
+                while(i + 1 in unique):
                     length = length + 1
             longest = max(length,longest)
         return longest
